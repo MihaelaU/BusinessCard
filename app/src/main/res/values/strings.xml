@@ -2,12 +2,9 @@
     <string name="app_name"></string>
     <string name="contentDescriptionHeadImage">Warm hearts for cold noses</string>
     <string name="imgTitle">Speed Vet Anca</string>
-    <string name="contentDescriptionLogo">We Know Pets Inside And Out.</string>
-    <string name="contentDescriptionMapIcon">Cluj, Romania, Preciziei, 6M</string>
-    <string name="contentDescPhoneIcon">+4 075 345 124</string>
-    <string name="address">Cluj, Romania</string>
-    <string name="contentDescLogo">Test</string>
+    <string name="Logo">We Know Pets Inside And Out.</string>
+    <string name="address">Cluj, Romania, Preciziei, 6M</string>
     <string name="phone">+4 075 345 124</string>
-    <string name="contentDescCalendarIcon">description</string>
-    <string name="calendar">Always open</string>
+    <string name="time">Always open</string>
+    <string name="email">anca.vet@gmail.com</string>
 </resources>
