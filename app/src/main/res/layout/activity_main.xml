@@ -1,17 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="businesscard.android.com.businesscard.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:id="@+id/mainLayout"
+android:layout_height="match_parent"
+android:padding="5dp"
+android:background="@color/colorbg">
+    <RelativeLayout
+        android:id="@+id/headerRelativeLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:padding="5dp"
+        android:background="@color/colorbg">
+
+        <ImageView
+            android:id="@+id/vetImage"
+            android:contentDescription="@string/contentDescriptionHeadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vetbrunno"
+            android:scaleType="centerCrop"
+            android:background="@color/colorbg" />
+
+        <TextView
+            android:id="@+id/imgTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="@string/imgTitle"
+            android:textSize="24sp"
+            android:layout_alignBottom="@id/vetImage"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:layout_below="@id/vetImage"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:text="@string/imgTitle"/>
+
+        <ImageView
+            android:id="@+id/logoIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginBottom="12dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/contentDescLogo"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <View
+            android:layout_below="@id/logoIcon"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/infoRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="@color/colorbg">
+
+        <LinearLayout
+            android:id="@+id/addressLayout"
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mapsIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/contentDescriptionMapIcon"
+                android:paddingRight="16dp"
+                android:src="@drawable/maps" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/paragraphTextColor"
+                android:textSize="14sp"
+                android:text="@string/address"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/phoneLayout"
+            android:layout_margin="6dp"
+            android:layout_below="@id/addressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/phoneIcon"
+                android:contentDescription="@string/contentDescPhoneIcon"
+                android:paddingRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/paragraphTextColor"
+                android:textSize="14sp"
+                android:text="@string/phone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/calendarLayout"
+            android:layout_margin="6dp"
+            android:layout_below="@id/phoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/calIcon"
+                android:contentDescription="@string/contentDescCalendarIcon"
+                android:paddingRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/paragraphTextColor"
+                android:textSize="14sp"
+                android:text="@string/calendar"/>
+
+        </LinearLayout>
+    </RelativeLayout>
