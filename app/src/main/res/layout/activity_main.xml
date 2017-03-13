@@ -16,7 +16,6 @@
         android:layout_height="fill_parent"
         android:layout_margin="0dp"
         android:layout_weight="1"
-        android:contentDescription="primary image"
         android:padding="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/vetbrunno" />
@@ -25,9 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:weightSum="5"
         android:background="@color/colorbg"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="5">
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,7 +34,7 @@
             android:layout_gravity="center|center_horizontal"
             android:layout_weight="1"
             android:fontFamily="cursive"
-            android:text="@string/imgTitle"
+            android:text="@string/Title"
             android:textColor="@color/colorTitle"
             android:textSize="36sp"
             android:textStyle="bold" />
@@ -55,7 +54,8 @@
             android:layout_height="0dp"
             android:layout_weight="3"
             android:orientation="vertical">
-//calendar logo and text
+            //calendar logo and text
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -63,19 +63,23 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:maxHeight="2dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/calendar"
-                    app:srcCompat="@drawable/calendar" />
+                    app:srcCompat="@drawable/calendar"
+                    tools:maxWidth="2dp"  />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/time"
+                    android:fontFamily="casual"
+                    android:text="@string/Time"
                     android:textColor="@android:color/white"
-                    android:textStyle="bold"
-                    android:fontFamily="casual"/>
+                    android:textStyle="bold" />
             </LinearLayout>
-//location logo and text
+            //location logo and text
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -86,17 +90,19 @@
                     android:contentDescription="location"
                     android:src="@drawable/maps"
                     android:tint="@color/colorPrimaryDark" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/address"
                     android:autoLink="map"
+                    android:fontFamily="casual"
+                    android:text="@string/Address"
                     android:textColor="@android:color/white"
-                    android:textStyle="bold"
-                    android:fontFamily="casual"/>
+                    android:textStyle="bold" />
             </LinearLayout>
-//phone logo and text
+            //phone logo and text
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -104,20 +110,22 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="contact"
+                    android:contentDescription="@string/Email"
                     android:src="@drawable/phone"
                     android:tint="@color/colorPrimaryDark" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/phone"
                     android:autoLink="phone"
+                    android:fontFamily="casual"
+                    android:text="@string/Phone"
                     android:textColor="@android:color/white"
-                    android:textStyle="bold"
-                    android:fontFamily="casual"/>
+                    android:textStyle="bold" />
             </LinearLayout>
-//email logo and text
+            //email logo and text
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -125,18 +133,19 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/email"
+                    android:contentDescription="@string/Email"
                     android:src="@drawable/email"
                     android:tint="@color/colorPrimaryDark" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/email"
                     android:autoLink="email"
+                    android:fontFamily="casual"
+                    android:text="@string/Email"
                     android:textColor="@android:color/white"
-                    android:textStyle="bold"
-                    android:fontFamily="casual"/>
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
