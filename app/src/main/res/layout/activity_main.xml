@@ -8,52 +8,59 @@
     android:orientation="vertical"
     android:padding="0dp"
     android:layout_margin="0dp"
-    tools:context="businesscard.android.com.businesscard.MainActivity">
+    tools:context="businesscard.android.com.businesscard.MainActivity"
+    tools:ignore="ExtraText">
 //photo and title
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="0dp"
         android:layout_margin="0dp"
         android:layout_weight="1"
+        android:contentDescription="@string/app_name"
         android:padding="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/vetbrunno" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="279dp"
         android:background="@color/colorbg"
         android:orientation="vertical"
         android:weightSum="5">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center|center_horizontal"
-            android:layout_weight="1"
             android:fontFamily="cursive"
             android:text="@string/Title"
+            android:textAlignment="center"
             android:textColor="@color/colorTitle"
             android:textSize="36sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_weight="0.18"
             android:fontFamily="casual"
             android:text="@string/Logo"
             android:textAlignment="center"
-            android:textColor="@color/colorTitle"
-            android:textStyle="bold|italic" />
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"
+            android:textStyle="bold|italic"
+            android:typeface="sans"
+            tools:ignore="NestedWeights" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:weightSum="1">
             //calendar logo and text
 
             <LinearLayout
@@ -63,11 +70,15 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription=""
+                    android:cropToPadding="false"
                     android:maxHeight="2dp"
-                    android:scaleType="fitCenter"
+                    android:scaleType="fitXY"
                     android:src="@drawable/calendar"
                     app:srcCompat="@drawable/calendar"
-                    tools:maxWidth="2dp"  />
+                    tools:ignore="ContentDescription"
+                    tools:maxWidth="2dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -88,9 +99,13 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:contentDescription="location"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/Address"
+                    android:maxHeight="2dp"
+                    android:scaleType="fitXY"
                     android:src="@drawable/maps"
-                    android:tint="@color/colorPrimaryDark" />
+                    android:tint="@color/colorPrimaryDark"
+                    tools:maxWidth="2dp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -111,9 +126,14 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
                     android:contentDescription="@string/Email"
+                    android:cropToPadding="false"
+                    android:maxHeight="2dp"
+                    android:scaleType="fitXY"
                     android:src="@drawable/phone"
-                    android:tint="@color/colorPrimaryDark" />
+                    android:tint="@color/colorPrimaryDark"
+                    tools:maxWidth="2dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -132,9 +152,10 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="89dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/Email"
+                    android:scaleType="fitXY"
                     android:src="@drawable/email"
                     android:tint="@color/colorPrimaryDark" />
 
