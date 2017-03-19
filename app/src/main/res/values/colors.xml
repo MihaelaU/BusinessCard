@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#B2FF59</color>
-    <color name="colorPrimaryDark">#E0F7FA</color>
+    <color name="Title">#B2FF59</color>
+    <color name="Logo">#E0F7FA</color>
     <color name="colorTitle">#FF9800</color>
     <color name="colorbg">#69F0AE</color>
     <color name="paragraphTextColor">#039BE5</color>
