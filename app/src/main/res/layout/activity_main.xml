@@ -4,76 +4,115 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context="businesscard.android.com.businesscard.MainActivity">
+    >
 
     <ImageView
-        android:contentDescription="@null"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/vetbrunno"
-        android:layout_weight="20"
-        android:paddingBottom="8dp"/>
+        android:layout_height="307dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@null"
+        android:paddingBottom="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vetbrunno" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Title"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_gravity="center"
         android:paddingBottom="8dp"
-        />
-    <LinearLayout
+        android:text="@string/Title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="24sp" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="10">
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/calendar"
-            android:layout_weight="1"
-            android:paddingBottom="8dp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/Time"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_weight="3"
-            android:layout_gravity="center"/>
-    </LinearLayout>
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"
+        android:text="@string/Logo"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp" />
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="40">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/phone"
-            android:layout_weight="1"
-            android:paddingBottom="8dp"/>
+            android:id="@+id/imageView"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.65"
+            android:paddingBottom="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calendar" />
+
         <TextView
+            android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/Phone"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_weight="3"
             android:layout_gravity="center"
-            />
+            android:layout_weight="3"
+            android:text="@string/Time"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
     </LinearLayout>
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="40">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/email"
-            android:layout_weight="1"
-            android:paddingBottom="8dp"/>
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:paddingBottom="8dp"
+            android:src="@drawable/phone" />
+
+        <TextView
+            android:layout_width="185dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:text="@string/Phone"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            android:layout_weight="1.06"
+            android:paddingBottom="8dp"
+            android:src="@drawable/email" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/Email"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center"
             android:layout_weight="3"
-            android:layout_gravity="center"/>
+            android:text="@string/Email"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            android:layout_weight="1.06"
+            android:paddingBottom="8dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:text="@string/Address"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 </LinearLayout>
